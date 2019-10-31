@@ -17,13 +17,13 @@
 <body>
 
     <!-- BEGIN: Navigation -->
-    <nav class="navbar navbar-dark navbar-expand-sm bg-primary fixed-top">
+    <nav class="navbar navbar-dark navbar-expand-sm fixed-top">
         <div class="container">
             <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#my-navbar">
                 <span class="navbar-toggler-icon"></span>
             </button>
 
-            <a class="navbar-brand mr-auto" href=".index.html">Ristorante Con Fusion</a>
+            <a class="navbar-brand mr-auto" href="./index.html">Ristorante Con Fusion</a>
 
             <div id="my-navbar" class="collapse navbar-collapse">
                 <ul class="navbar-nav mr-auto">
@@ -52,7 +52,14 @@
 
     <div class="container">
         <div class="row">
-            <div class="col col-sm">
+            <!-- BEGIN: Breadcrumbs -->
+            <ol class="col-12 breadcrumb">
+                <li class="breadcrumb-item"><a href="./index.html">Home</a></li>
+                <li class="breadcrumb-item active">About Us</li>
+            </ol>
+            <!-- END: Breadcrumbs -->
+
+            <div class="col-12 col-sm-12">
                <h3>About Us</h3>
                <hr>
             </div>
@@ -95,7 +102,7 @@
                 <div class="col-4 offset-1 col-sm-2">
                     <h5>Links</h5>
                     <ul class="list-unstyled">
-                        <li><a href="#">Home</a></li>
+                        <li><a href="./index.html">Home</a></li>
                         <li><a href="#">About</a></li>
                         <li><a href="#">Menu</a></li>
                         <li><a href="#">Contact</a></li>
