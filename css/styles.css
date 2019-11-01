@@ -35,6 +35,16 @@ address {
 	color: #0f0f0f;
 }
 
+address a i.fa {
+    padding-right: 4px;
+}
+
+address a:hover {
+    color: #512DA8;
+    text-decoration: none;
+}
+
+
 body {
 	padding: 50px 0 0 0;
 	z-index: 0
