@@ -257,14 +257,11 @@
                     <a class="carousel-control-next" href="#my-carousel" role="button" data-slide="next">
                         <span class="carousel-control-next-icon"></span></a>
 
-                    <div class="btn-group" id="carousel-button">
-                        <button class="btn btn-danger btn-sm" id="carousel-pause">
-                            <span class="fa fa-pause"></span>
-                        </button>
-                        <button class="btn btn-danger btn-sm" id="carousel-play">
-                            <span class="fa fa-play"></span>
-                        </button>
-                    </div>
+                    <!-- jquery will alternate the button from pause to play -->
+                    <button class="btn btn-danger btn-sm" id="carousel-button">
+                        <span class="fa fa-pause"></span>
+                    </button>
+
                 </div>
             </div>
         </div>
@@ -378,15 +375,22 @@
         $(document).ready(function() {
             /* $('[data-toggle="tooltip"]').tooltip(); */  // => turn on tooltips
 
-            $('#my-carousel').carousel({ interval: 200 });
+            $('#my-carousel').carousel({ interval: 100 });
 
-            $('#carousel-pause').click(function() {
-                $('#my-carousel').carousel('pause');
+            $('#carousel-button').click(function() {
+                var span = $('#carousel-button').children('span');
+
+                if(span.hasClass('fa-pause')) {
+                    $('#my-carousel').carousel('pause');
+                    span.removeClass('fa-pause');
+                    span.addClass('fa-play');
+                } else {
+                    $('#my-carousel').carousel('cycle');
+                    span.removeClass('fa-play');
+                    span.addClass('fa-pause');
+                }
             });
 
-            $('#carousel-play').click(function() {
-                $('#my-carousel').carousel('cycle');
-            });
         });
     </script>
 </body>
