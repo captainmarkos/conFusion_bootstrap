@@ -3,21 +3,29 @@
   "version": "1.0.0",
   "description": "This is a website for Ristorante Con Fusion",
   "main": "index.html",
+  "repository": {
+    "type": "git",
+    "url": ""
+  },
   "scripts": {
     "start": "npm run lite",
     "test": "echo \"Error: no test specified\" && exit 1",
-    "lite": "lite-server"
+    "lite": "lite-server",
+    "scss": "node-sass -o css/ css/",
+    "lessc": "./node_modules/.bin/lessc css/styles.less css/styles.css"
   },
   "author": "",
   "license": "ISC",
   "devDependencies": {
-    "@fortawesome/fontawesome-free": "^5.11.2",
-    "lite-server": "^2.3.0"
+    "less": "^3.10.3",
+    "lite-server": "^2.3.0",
+    "node-sass": "^4.13.0"
   },
   "dependencies": {
-    "bootstrap": "^4.3.1",
+    "@fortawesome/fontawesome-free": "^5.12.0",
+    "bootstrap": "^4.4.1",
     "bootstrap-social": "^5.1.1",
     "jquery": "^3.4.1",
-    "popper.js": "^1.12.9"
+    "popper.js": "^1.16.0"
   }
 }
