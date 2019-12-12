@@ -4,10 +4,10 @@ npm install
 ```
 
 ### Start the lite server:
-
+```
 npm start
 npm run lite
-
+```
 
 ### Compiling less and scss files:
 
