@@ -27,5 +27,8 @@ npm scripts that will watch for file changes and run the appropriate tasks.
 npm install --save-dev parallelshell@3.0.1
 ```
 
-Looking at `package.json` we can now run `npm start` that will watch for files
-changed and also run the lite server.
+Looking at `package.json` there are several npm scripts that can now be run.
+
+`npm start`: watches files for changes and starts the lite server
+`npm build`: builds files for deployment in `dist/`
+
