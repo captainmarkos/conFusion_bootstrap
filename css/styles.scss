@@ -77,14 +77,11 @@ body {
     z-index: 1;
 }
 
-.modal-title {
-    color: floralwhite;
-}
-
 .modal-header {
     background-color: $background-dark;
+    color: floralwhite;
 
-    button {
+    .close {
         color: floralwhite;
     }
 }
