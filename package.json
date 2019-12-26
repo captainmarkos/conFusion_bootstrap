@@ -1,11 +1,11 @@
 {
-  "name": "confusion",
+  "name": "confusion_bootstrap",
   "version": "1.0.0",
   "description": "This is a website for Ristorante Con Fusion",
   "main": "index.html",
   "repository": {
     "type": "git",
-    "url": ""
+    "url": "https://github.com/captainmarkos/confusion_bootstrap"
   },
   "scripts": {
     "start": "npm run watch:all",
